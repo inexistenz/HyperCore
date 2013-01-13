@@ -1,1 +1,8 @@
+# Directories
+Temp
 Library
+
+# Files
+*.csproj
+*.sln
+*.userprefs
