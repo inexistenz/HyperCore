@@ -1,0 +1,14 @@
+[Input device is a PS3/Xbox/console controller]
+[Power-ups appear in larger number each time they are collected (+1)]
+
+Player controls a ship, left stick for movement direction, right stick for
+aiming and firing is done with the left trigger. The player collects power-ups
+by running into them. Power-ups allow the ship to attack, add to score,
+increase score multiplier and cause the ship and enemies to speed up. Attacking
+drains the multiplier.
+
+[Enemies appear in larger numbers each time a power-up is collected (+1)]
+[Enemies charge at the player as soon as they spawn]
+
+When an enemy runs into the ship the score multiplier is dropped back to 1. If
+the ship is hit while the multiplier is equal to 1 it is game over.

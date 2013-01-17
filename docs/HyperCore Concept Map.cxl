@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmap xmlns:dcterms="http://purl.org/dc/terms/" xmlns="http://cmap.ihmc.us/xml/cmap/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+    <res-meta>
+        <dc:title>HyperCore Concept Map</dc:title>
+        <dc:subject>HyperCore,game,development</dc:subject>
+        <dc:contributor>
+            <vcard:FN>Jonathan Llewellyn</vcard:FN>
+            <vcard:EMAIL>inexistenz@gmail.com</vcard:EMAIL>
+        </dc:contributor>
+        <dcterms:created>2013-01-16T09:30:47-05:00</dcterms:created>
+        <dcterms:modified>2013-01-16T23:18:16-05:00</dcterms:modified>
+        <dc:language>en</dc:language>
+        <dc:format>x-cmap/x-storable</dc:format>
+        <dc:publisher>FIHMC CmapTools 5.05.01</dc:publisher>
+        <dc:extent>6453 bytes</dc:extent>
+        <dc:source>cmap:1LC4VJMS0-1XR63S1-1:1LC4VJSDS-VHQNQL-Y:1LCJ537GG-2506ZX-50</dc:source>
+    </res-meta>
+    <map width="271" height="481">
+        <concept-list>
+            <concept id="1LCJ6PDBD-VPP0S4-5P" label="Attacks"/>
+            <concept id="1LCJ638FT-1VFMR9N-5H" label="Enemy"/>
+            <concept id="1LCJ7C149-14R505L-61" label="Points"/>
+            <concept id="1LCJ631ZQ-D9WSF3-5B" label="Ship"/>
+            <concept id="1LCJ6CP8T-1HQNKF6-5M" label="Multiplier"/>
+            <concept id="1LCJ63CLL-2CHPZLK-5K" label="Power ups"/>
+        </concept-list>
+        <linking-phrase-list>
+            <linking-phrase id="1LCKM3TLF-CHBFFT-QT" label="increases"/>
+            <linking-phrase id="1LCJ7PZ8T-27Z6N3N-C8" label="on"/>
+            <linking-phrase id="1LCKMFJ5R-1PG3WKM-V5" label="increases"/>
+            <linking-phrase id="1LCJ7L5XF-20T78DT-6K" label="collects"/>
+            <linking-phrase id="1LCJ7M1B0-1TKZN0Z-7T" label="increases"/>
+            <linking-phrase id="1LCJ7QL63-1NZN8F2-D5" label="to gain"/>
+            <linking-phrase id="1LCKD827M-G6T46P-NR" label="speeds up"/>
+            <linking-phrase id="1LCJ7P103-1WYYZLC-9B" label="uses"/>
+            <linking-phrase id="1LCJ7PNXZ-YXM107-B9" label="drain"/>
+        </linking-phrase-list>
+        <connection-list>
+            <connection id="1LCKD827T-Y1LZ64-P0" from-id="1LCKD827M-G6T46P-NR" to-id="1LCJ631ZQ-D9WSF3-5B"/>
+            <connection id="1LCJ7L5XJ-14Z6269-6Q" from-id="1LCJ631ZQ-D9WSF3-5B" to-id="1LCJ7L5XF-20T78DT-6K"/>
+            <connection id="1LCKMFJ5Y-1ZW6N76-VF" from-id="1LCKMFJ5R-1PG3WKM-V5" to-id="1LCJ7C149-14R505L-61"/>
+            <connection id="1LCJ7PZ8Z-22DZL2W-CC" from-id="1LCJ6PDBD-VPP0S4-5P" to-id="1LCJ7PZ8T-27Z6N3N-C8"/>
+            <connection id="1LCJ7M1B7-ND5564-7X" from-id="1LCJ63CLL-2CHPZLK-5K" to-id="1LCJ7M1B0-1TKZN0Z-7T"/>
+            <connection id="1LCKD8TPB-281YM6Y-PY" from-id="1LCKD827M-G6T46P-NR" to-id="1LCJ638FT-1VFMR9N-5H"/>
+            <connection id="1LCJ7P108-2CMLKZS-9F" from-id="1LCJ631ZQ-D9WSF3-5B" to-id="1LCJ7P103-1WYYZLC-9B"/>
+            <connection id="1LCJ7QL68-12WRXS3-DG" from-id="1LCJ7QL63-1NZN8F2-D5" to-id="1LCJ7C149-14R505L-61"/>
+            <connection id="1LCJ7PNY2-299SPNS-BL" from-id="1LCJ7PNXZ-YXM107-B9" to-id="1LCJ6CP8T-1HQNKF6-5M"/>
+            <connection id="1LCJ7L5XJ-2152MXK-6X" from-id="1LCJ7L5XF-20T78DT-6K" to-id="1LCJ63CLL-2CHPZLK-5K"/>
+            <connection id="1LCKMFJ5X-1BMBN32-V8" from-id="1LCJ63CLL-2CHPZLK-5K" to-id="1LCKMFJ5R-1PG3WKM-V5"/>
+            <connection id="1LCKD827S-1WYKPFV-NV" from-id="1LCJ63CLL-2CHPZLK-5K" to-id="1LCKD827M-G6T46P-NR"/>
+            <connection id="1LCKM3TLL-RGY636-QX" from-id="1LCJ6CP8T-1HQNKF6-5M" to-id="1LCKM3TLF-CHBFFT-QT"/>
+            <connection id="1LCJ7PNY1-108M8VJ-BD" from-id="1LCJ6PDBD-VPP0S4-5P" to-id="1LCJ7PNXZ-YXM107-B9"/>
+            <connection id="1LCKM3TLM-8PRQL3-R3" from-id="1LCKM3TLF-CHBFFT-QT" to-id="1LCJ7C149-14R505L-61"/>
+            <connection id="1LCJ7PZ91-TPPRZK-CJ" from-id="1LCJ7PZ8T-27Z6N3N-C8" to-id="1LCJ638FT-1VFMR9N-5H"/>
+            <connection id="1LCJ7M1B9-XZN4LW-83" from-id="1LCJ7M1B0-1TKZN0Z-7T" to-id="1LCJ6CP8T-1HQNKF6-5M"/>
+            <connection id="1LCJ7QL67-1S8JJMZ-D8" from-id="1LCJ638FT-1VFMR9N-5H" to-id="1LCJ7QL63-1NZN8F2-D5"/>
+            <connection id="1LCJ7P109-1FZG37Q-9L" from-id="1LCJ7P103-1WYYZLC-9B" to-id="1LCJ6PDBD-VPP0S4-5P"/>
+        </connection-list>
+        <concept-appearance-list>
+            <concept-appearance id="1LCJ6PDBD-VPP0S4-5P" x="219" y="292" width="60" height="25"/>
+            <concept-appearance id="1LCJ638FT-1VFMR9N-5H" x="257" y="393" width="57" height="27" background-color="255,255,0,255"/>
+            <concept-appearance id="1LCJ7C149-14R505L-61" x="159" y="494" width="44" height="17" border-shape="rectangle"/>
+            <concept-appearance id="1LCJ631ZQ-D9WSF3-5B" x="219" y="191" width="43" height="28" font-color="255,255,255,255" background-color="255,0,0,255" shadow-color="none"/>
+            <concept-appearance id="1LCJ6CP8T-1HQNKF6-5M" x="163" y="393" width="67" height="24" border-shape="rectangle" shadow-color="255,255,0,255"/>
+            <concept-appearance id="1LCJ63CLL-2CHPZLK-5K" x="160" y="38" width="78" height="27" background-color="255,255,0,255" shadow-color="none"/>
+        </concept-appearance-list>
+        <linking-phrase-appearance-list>
+            <linking-phrase-appearance id="1LCKM3TLF-CHBFFT-QT" x="164" y="444" width="58" height="11"/>
+            <linking-phrase-appearance id="1LCJ7PZ8T-27Z6N3N-C8" x="240" y="342" width="17" height="9"/>
+            <linking-phrase-appearance id="1LCKMFJ5R-1PG3WKM-V5" x="53" y="89" width="58" height="11"/>
+            <linking-phrase-appearance id="1LCJ7L5XF-20T78DT-6K" x="190" y="139" width="47" height="11"/>
+            <linking-phrase-appearance id="1LCJ7M1B0-1TKZN0Z-7T" x="136" y="89" width="58" height="11"/>
+            <linking-phrase-appearance id="1LCJ7QL63-1NZN8F2-D5" x="258" y="444" width="44" height="13"/>
+            <linking-phrase-appearance id="1LCKD827M-G6T46P-NR" x="261" y="89" width="63" height="14"/>
+            <linking-phrase-appearance id="1LCJ7P103-1WYYZLC-9B" x="219" y="242" width="29" height="9"/>
+            <linking-phrase-appearance id="1LCJ7PNXZ-YXM107-B9" x="190" y="342" width="33" height="11"/>
+        </linking-phrase-appearance-list>
+        <connection-appearance-list>
+            <connection-appearance id="1LCKD827T-Y1LZ64-P0" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="261" y="92"/>
+                <control-point x="261" y="99"/>
+                <control-point x="260" y="104"/>
+                <control-point x="256" y="111"/>
+                <control-point x="252" y="118"/>
+                <control-point x="249" y="125"/>
+                <control-point x="248" y="130"/>
+                <control-point x="248" y="137"/>
+                <control-point x="248" y="142"/>
+                <control-point x="248" y="149"/>
+                <control-point x="246" y="154"/>
+                <control-point x="242" y="160"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7L5XJ-14Z6269-6Q" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="219" y="175"/>
+                <control-point x="219" y="168"/>
+                <control-point x="217" y="163"/>
+                <control-point x="212" y="158"/>
+            </connection-appearance>
+            <connection-appearance id="1LCKMFJ5Y-1ZW6N76-VF" from-pos="center" to-pos="top" type="vector" arrowhead="if-to-concept">
+                <control-point x="53" y="447"/>
+                <control-point x="53" y="454"/>
+                <control-point x="56" y="458"/>
+                <control-point x="62" y="460"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7PZ8Z-22DZL2W-CC" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="219" y="295"/>
+                <control-point x="219" y="302"/>
+                <control-point x="220" y="307"/>
+                <control-point x="224" y="314"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7M1B7-ND5564-7X" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="160" y="42"/>
+                <control-point x="160" y="49"/>
+                <control-point x="158" y="54"/>
+                <control-point x="155" y="60"/>
+            </connection-appearance>
+            <connection-appearance id="1LCKD8TPB-281YM6Y-PY" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="261" y="92"/>
+                <control-point x="261" y="99"/>
+                <control-point x="262" y="104"/>
+                <control-point x="266" y="111"/>
+                <control-point x="270" y="118"/>
+                <control-point x="273" y="125"/>
+                <control-point x="274" y="130"/>
+                <control-point x="274" y="137"/>
+                <control-point x="274" y="345"/>
+                <control-point x="274" y="352"/>
+                <control-point x="273" y="357"/>
+                <control-point x="270" y="364"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7P108-2CMLKZS-9F" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="219" y="216"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7QL68-12WRXS3-DG" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="258" y="447"/>
+                <control-point x="258" y="454"/>
+                <control-point x="255" y="458"/>
+                <control-point x="249" y="461"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7PNY2-299SPNS-BL" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="190" y="345"/>
+                <control-point x="190" y="352"/>
+                <control-point x="188" y="357"/>
+                <control-point x="184" y="363"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7L5XJ-2152MXK-6X" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="190" y="87"/>
+                <control-point x="190" y="80"/>
+                <control-point x="188" y="75"/>
+                <control-point x="184" y="69"/>
+            </connection-appearance>
+            <connection-appearance id="1LCKMFJ5X-1BMBN32-V8" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="160" y="42"/>
+                <control-point x="160" y="49"/>
+                <control-point x="157" y="53"/>
+                <control-point x="151" y="55"/>
+            </connection-appearance>
+            <connection-appearance id="1LCKD827S-1WYKPFV-NV" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="160" y="42"/>
+                <control-point x="160" y="49"/>
+                <control-point x="163" y="53"/>
+                <control-point x="169" y="55"/>
+            </connection-appearance>
+            <connection-appearance id="1LCKM3TLL-RGY636-QX" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="163" y="418"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7PNY1-108M8VJ-BD" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="219" y="295"/>
+                <control-point x="219" y="302"/>
+                <control-point x="217" y="307"/>
+                <control-point x="213" y="313"/>
+            </connection-appearance>
+            <connection-appearance id="1LCKM3TLM-8PRQL3-R3" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="164" y="447"/>
+                <control-point x="164" y="454"/>
+                <control-point x="164" y="460"/>
+                <control-point x="163" y="467"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7PZ91-TPPRZK-CJ" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="240" y="345"/>
+                <control-point x="240" y="352"/>
+                <control-point x="241" y="357"/>
+                <control-point x="244" y="364"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7M1B9-XZN4LW-83" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="136" y="345"/>
+                <control-point x="136" y="352"/>
+                <control-point x="138" y="357"/>
+                <control-point x="142" y="363"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7QL67-1S8JJMZ-D8" from-pos="center" to-pos="center" type="vector" arrowhead="if-to-concept">
+                <control-point x="257" y="418"/>
+            </connection-appearance>
+            <connection-appearance id="1LCJ7P109-1FZG37Q-9L" from-pos="center" to-pos="bottom" type="vector" arrowhead="if-to-concept">
+                <control-point x="219" y="267"/>
+            </connection-appearance>
+        </connection-appearance-list>
+        <style-sheet-list>
+            <style-sheet id="_Default_">
+                <map-style background-color="255,255,255,0" image-style="full" image-top-left="0,0"/>
+                <concept-style font-name="Verdana" font-size="12" font-style="plain" font-color="0,0,0,255" text-margin="4" background-color="237,244,246,255" background-image-style="full" border-color="0,0,0,255" border-style="solid" border-thickness="1"
+                    border-shape="rounded-rectangle" text-alignment="center" shadow-color="none"/>
+                <linking-phrase-style font-name="Verdana" font-size="12" font-style="plain" font-color="0,0,0,255" text-margin="1" background-color="0,0,255,0" background-image-style="full" border-color="0,0,0,0" border-style="solid" border-thickness="1"
+                    border-shape="rectangle" text-alignment="center" shadow-color="none"/>
+                <connection-style color="0,0,0,255" style="solid" thickness="1" type="straight" arrowhead="if-to-concept-and-slopes-up"/>
+                <resource-style font-name="SanSerif" font-size="12" font-style="plain" font-color="0,0,0,255" background-color="192,192,192,255"/>
+            </style-sheet>
+            <style-sheet id="_LatestChanges_">
+                <concept-style font-color="255,255,255,255" background-color="255,255,0,255" border-shape="rectangle" shadow-color="255,255,0,255"/>
+                <connection-style arrowhead="if-to-concept"/>
+            </style-sheet>
+        </style-sheet-list>
+        <extra-graphical-properties-list>
+            <properties-list id="1LCJ537GG-2506ZX-50">
+                <property key="StyleSheetGroup_0" value="//*@!#$%%^&amp;*()() No Grouped StyleSheets @"/>
+            </properties-list>
+        </extra-graphical-properties-list>
+    </map>
+</cmap>
