@@ -3,6 +3,7 @@ Temp
 Library
 
 # Files
+*.booproj
 *.csproj
 *.sln
 *.userprefs
