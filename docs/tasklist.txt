@@ -1,0 +1,10 @@
+[ ] - Create enemy generation function
+[ ] - Create powerup generation function
+[ ] - Add reaction function stubs
+[ ] - Create collision funcions for different collision types
+[ ] - Create bullets
+[ ] - Create bullet generation function
+[ ] - Orient ship in correct direction
+
+[ ] - Add controller support
+[ ] - Create start menu
