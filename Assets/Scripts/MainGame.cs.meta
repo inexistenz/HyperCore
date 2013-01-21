@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: fd707b231434cbf4d84570b96db1aebb
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - playerShip: {fileID: 100000, guid: 618be36509460bb4fa2fe7fc60ee3738, type: 2}
+  - enemy: {fileID: 100000, guid: 0a7365b02b92b4343aadeb71d96820b5, type: 2}
+  - powerUp: {fileID: 100000, guid: 8e04aff38dc3a3345b62adcb1a16a259, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
