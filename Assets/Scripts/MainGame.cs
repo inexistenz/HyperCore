@@ -11,29 +11,42 @@ public class MainGame : MonoBehaviour {
 	
 	// these 3 variables are for the possible fractal position for power ups
 	public float triangleRadius = 10;
-	public Vector3 nextEnemyPosition;
+	public float enemyPositionRadius = 15;
+	
 	public Vector3 nextPowerUpPosition;
 	
-	private float spawnTime = 3; // number of seconds before an enemy shows up
+	public Vector3 nextEnemyPosition;
+	private float enemySpawnTime = 3; // number of seconds before an enemy shows up
+	private float timeBetweenEnemies = 0.5f;
+	private float nextSpawnTime;
+	private float radForNextSpawn = 0;
+	private float radBetweenSpawn = Mathf.PI / 4;
 	private bool spawned = false; // spawning variable for when  not continually spawning the enemies
+	private int enemiesToSpawn = 5;
+	private int numPowerUpsToSpawn = 1;
+	
 	private GameObject player; // Gameplay reference for player ship
 
 	// Use this for initialization
 	void Start () {
-		nextEnemyPosition = new Vector3(10,0,0);
+		nextEnemyPosition = new Vector3(enemyPositionRadius,0,0);
 		nextPowerUpPosition = Vector3.zero;
 		
 		player = (GameObject) Instantiate (playerShip,Vector3.zero,Quaternion.identity);
 		// Set player speed to gameSpeed
 		Player playerCtl = player.GetComponent<Player>();
 		playerCtl.speed = gameSpeed;
+		
+		nextSpawnTime = enemySpawnTime + Time.timeSinceLevelLoad;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(!spawned && Time.time > spawnTime) {
-			generateEnemy(new Vector3(10,10,0));
-			spawned = true;
+		if(enemiesToSpawn != 0 && Time.timeSinceLevelLoad > nextSpawnTime) {
+			generateEnemy(nextEnemyPosition);
+			enemiesToSpawn--;
+			nextEnemyPosition = getNextEnemyPosition();
+			nextSpawnTime = Time.timeSinceLevelLoad + timeBetweenEnemies;
 		}
 	}
 	
@@ -63,6 +76,7 @@ public class MainGame : MonoBehaviour {
 	}
 	
 	Vector3 getNextEnemyPosition() {
-		return Vector3.zero;
+		radForNextSpawn += radBetweenSpawn;
+		return new Vector3(Mathf.Cos(radForNextSpawn) * enemyPositionRadius, Mathf.Sin (radForNextSpawn) * enemyPositionRadius,0);
 	}
 }
