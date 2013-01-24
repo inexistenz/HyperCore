@@ -1,12 +1,15 @@
 [x] - Create enemy generation function
+[ ] - Create enemy positioning function
 [x] - Create powerup generation function
-[ ] - Add reaction function stubs
-[ ] - Create collision funcions for different collision types
+[ ] - Create fractal power up placement function
+[x] - Add reaction function stubs
+[x] - Create collision funcions for different collision types
 [x] - Create bullets
 [x] - Create bullet generation function
 [ ] - Orient ship in correct direction
 [ ] - Fix firing interface
 [ ] - Create periodic power up generation function
+[ ] - Create boundary functions
 
 [ ] - Add controller support
 [ ] - Create start menu
