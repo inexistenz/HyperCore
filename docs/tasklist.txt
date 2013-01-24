@@ -1,5 +1,7 @@
 [x] - Create enemy generation function
-[ ] - Create enemy positioning function
+[x] - Create enemy positioning function
+[x] - Create delay mechanics
+[ ] - Internalize enemy initialization function
 [x] - Create powerup generation function
 [ ] - Create fractal power up placement function
 [x] - Add reaction function stubs
