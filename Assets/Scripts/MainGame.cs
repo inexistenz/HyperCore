@@ -9,15 +9,23 @@ public class MainGame : MonoBehaviour {
 	
 	public float gameSpeed = 8; // Speed value that controls all movement in the game
 	
+	// these 3 variables are for the possible fractal position for power ups
+	public float triangleRadius = 10;
+	public Vector3 nextEnemyPosition;
+	public Vector3 nextPowerUpPosition;
 	
-	private float spawnTime = 3; 
-	private bool spawned = false;
+	private float spawnTime = 3; // number of seconds before an enemy shows up
+	private bool spawned = false; // spawning variable for when  not continually spawning the enemies
 	private GameObject player; // Gameplay reference for player ship
+
 	// Use this for initialization
 	void Start () {
+		nextEnemyPosition = new Vector3(10,0,0);
+		nextPowerUpPosition = Vector3.zero;
+		
 		player = (GameObject) Instantiate (playerShip,Vector3.zero,Quaternion.identity);
 		// Set player speed to gameSpeed
-		PlayerControl playerCtl = player.GetComponent<PlayerControl>();
+		Player playerCtl = player.GetComponent<Player>();
 		playerCtl.speed = gameSpeed;
 	}
 	
@@ -29,7 +37,12 @@ public class MainGame : MonoBehaviour {
 		}
 	}
 	
-	// Enemy generation function
+	/// <summary>
+	/// Generates the enemy.
+	/// </summary>
+	/// <param name='pos'>
+	/// Enemy's initial position.
+	/// </param>
 	void generateEnemy(Vector3 pos){
 		GameObject enemyShip = (GameObject) Instantiate(enemy,pos,Quaternion.identity);
 		
@@ -39,8 +52,17 @@ public class MainGame : MonoBehaviour {
 		enemyShip.rigidbody.velocity = enemyVelocity.normalized * gameSpeed * 0.75f; 
 	}
 	
-	// Power up generation function
+	/// <summary>
+	/// Generates the power up.
+	/// </summary>
+	/// <param name='pos'>
+	/// Power up's initial position.
+	/// </param>
 	void generatePowerUp(Vector3 pos){
 		Instantiate(powerUp,pos,Quaternion.identity);
+	}
+	
+	Vector3 getNextEnemyPosition() {
+		return Vector3.zero;
 	}
 }
