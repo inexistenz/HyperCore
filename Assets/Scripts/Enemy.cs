@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : CollidingObject {
 
 	// Use this for initialization
 	void Start () {
@@ -14,8 +14,11 @@ public class Enemy : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider collider) {
-		// Stub for collision detection
-		// TODO: create switch for different collision types
-		Debug.Log (this.name + " collided with: " + collider.transform.name);
+		CollidingObject co = collider.gameObject.GetComponent<CollidingObject>();
+		co.enemyCollision();
+	}
+	
+	public override void bulletCollision () {
+		Debug.Log ("Enemy shot!");
 	}
 }
