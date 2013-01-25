@@ -1,17 +1,22 @@
+[x] - Create MainGame script reference
 [x] - Create enemy generation function
 [x] - Create enemy positioning function
+[ ] - Add enemy behaviour
 [x] - Create delay mechanics
-[ ] - Internalize enemy initialization function
 [x] - Create powerup generation function
 [ ] - Create fractal power up placement function
+[x] - Add power up behaviour
 [x] - Add reaction function stubs
-[x] - Create collision funcions for different collision types
+[x] - Create collision functions for different collision types
 [x] - Create bullets
 [x] - Create bullet generation function
-[ ] - Orient ship in correct direction
-[ ] - Fix firing interface
-[ ] - Create periodic power up generation function
+[x] - Create periodic power up generation function
 [ ] - Create boundary functions
+[ ] - Put multiplier in
+[ ] - Add multiplier display
+[ ] - Add speedup/slowdown to gameplay logic
 
 [ ] - Add controller support
+[ ] - Fix firing interface
+[ ] - Orient ship in correct direction
 [ ] - Create start menu
