@@ -9,6 +9,8 @@ using System.Collections;
 /// </summary>
 public class CollidingObject : MonoBehaviour {
 	
+	public static MainGame mainGame;
+
 	public virtual void playerCollision() { }
 	
 	public virtual void enemyCollision() { }
