@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class Enemy : CollidingObject {
-
+	
 	// Use this for initialization
 	void Start () {
 	

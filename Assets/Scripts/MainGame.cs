@@ -8,46 +8,68 @@ public class MainGame : MonoBehaviour {
 	public GameObject powerUp; // Power Up Prefab
 	
 	public float gameSpeed = 8; // Speed value that controls all movement in the game
+	private int numPowerUpsCollected = 0; // Number of power ups collected, controls how many enemies spawn
 	
-	// these 3 variables are for the possible fractal position for power ups
-	public float triangleRadius = 10;
-	public float enemyPositionRadius = 15;
-	
+	// Power up spawning variables
+	public float triangleRadius = 10; // this is for a future fractal function, maybe 
 	public Vector3 nextPowerUpPosition;
-	
-	public Vector3 nextEnemyPosition;
-	private float enemySpawnTime = 3; // number of seconds before an enemy shows up
-	private float timeBetweenEnemies = 0.5f;
-	private float nextSpawnTime;
-	private float radForNextSpawn = 0;
-	private float radBetweenSpawn = Mathf.PI / 4;
-	private bool spawned = false; // spawning variable for when  not continually spawning the enemies
-	private int enemiesToSpawn = 5;
+	public float nextPowerUpSpawnTime;
+	public float timeBetweenPowerUps = 2;
 	private int numPowerUpsToSpawn = 1;
 	
-	private GameObject player; // Gameplay reference for player ship
+	// Enemy spawning variables
+	public float enemyPositionRadius = 15;
+	public Vector3 nextEnemyPosition;
+	public float radBetweenSpawn = Mathf.PI / 8; // enemies spawn in a circular pattern for now
+	private float enemySpawnTime = 3; // number of seconds before an enemy shows up
+	private float timeBetweenEnemies = 0.75f;
+	private float nextEnemySpawnTime;
+	private float radForNextSpawn = 0;
+	private int enemiesToSpawn = 0;
+
+	public GameObject player; // Gameplay reference for player ship
 
 	// Use this for initialization
 	void Start () {
+		CollidingObject.mainGame = this;
+		
 		nextEnemyPosition = new Vector3(enemyPositionRadius,0,0);
 		nextPowerUpPosition = Vector3.zero;
 		
 		player = (GameObject) Instantiate (playerShip,Vector3.zero,Quaternion.identity);
-		// Set player speed to gameSpeed
-		Player playerCtl = player.GetComponent<Player>();
-		playerCtl.speed = gameSpeed;
 		
-		nextSpawnTime = enemySpawnTime + Time.timeSinceLevelLoad;
+		nextPowerUpSpawnTime = Time.timeSinceLevelLoad + timeBetweenPowerUps;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(enemiesToSpawn != 0 && Time.timeSinceLevelLoad > nextSpawnTime) {
+		
+		// Spawn enemies if there are any left to spawn if it is passed spawn time
+		if(enemiesToSpawn != 0 && Time.timeSinceLevelLoad > nextEnemySpawnTime) {
 			generateEnemy(nextEnemyPosition);
-			enemiesToSpawn--;
+			--enemiesToSpawn;
 			nextEnemyPosition = getNextEnemyPosition();
-			nextSpawnTime = Time.timeSinceLevelLoad + timeBetweenEnemies;
+			nextEnemySpawnTime = Time.timeSinceLevelLoad + timeBetweenEnemies;
 		}
+		
+		// Spawn PowerUps same as enemies
+		if(numPowerUpsToSpawn != 0 && Time.timeSinceLevelLoad > nextPowerUpSpawnTime) {
+			generatePowerUp(nextPowerUpPosition);
+			--numPowerUpsToSpawn;
+			nextPowerUpPosition = getNextPowerUpPosition();
+			nextPowerUpSpawnTime = Time.timeSinceLevelLoad + timeBetweenPowerUps;
+		}
+	}
+	
+	/// <summary>
+	/// Increase the number of Power Ups and Enemies to spawn.
+	/// </summary>
+	public void powerUpCollected() {
+		++numPowerUpsToSpawn;
+		++numPowerUpsCollected;
+		enemiesToSpawn += numPowerUpsCollected;
+		nextPowerUpSpawnTime = Time.timeSinceLevelLoad + timeBetweenPowerUps;
+		nextEnemySpawnTime = Time.timeSinceLevelLoad + timeBetweenEnemies;
 	}
 	
 	/// <summary>
@@ -66,6 +88,18 @@ public class MainGame : MonoBehaviour {
 	}
 	
 	/// <summary>
+	/// Gets the next enemy position.
+	/// </summary>
+	/// <returns>
+	/// The next enemy position.
+	/// </returns>/
+	Vector3 getNextEnemyPosition() {
+		radForNextSpawn += radBetweenSpawn;
+		return new Vector3(Mathf.Cos(radForNextSpawn) * enemyPositionRadius,
+					Mathf.Sin (radForNextSpawn) * enemyPositionRadius,0);
+	}
+	
+	/// <summary>
 	/// Generates the power up.
 	/// </summary>
 	/// <param name='pos'>
@@ -75,8 +109,13 @@ public class MainGame : MonoBehaviour {
 		Instantiate(powerUp,pos,Quaternion.identity);
 	}
 	
-	Vector3 getNextEnemyPosition() {
-		radForNextSpawn += radBetweenSpawn;
-		return new Vector3(Mathf.Cos(radForNextSpawn) * enemyPositionRadius, Mathf.Sin (radForNextSpawn) * enemyPositionRadius,0);
+	/// <summary>
+	/// Gets the next power up position.
+	/// </summary>
+	/// <returns>
+	/// The next power up position.
+	/// </returns>
+	Vector3 getNextPowerUpPosition() {
+		return Vector3.zero;
 	}
 }
