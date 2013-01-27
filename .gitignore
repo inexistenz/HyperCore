@@ -8,6 +8,7 @@ Library
 *.sln
 *.userprefs
 *.pidb
+*.unityproj
 
 # Vim Files
 *.sw?
