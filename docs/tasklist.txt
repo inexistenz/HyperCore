@@ -1,6 +1,7 @@
 [x] - Create MainGame script reference
 [x] - Create enemy generation function
 [x] - Create enemy positioning function
+[ ] - Internalize enemy initialization
 [ ] - Add enemy behaviour
 [x] - Create delay mechanics
 [x] - Create powerup generation function
@@ -11,7 +12,8 @@
 [x] - Create bullets
 [x] - Create bullet generation function
 [x] - Create periodic power up generation function
-[ ] - Create boundary functions
+[x] - Create boundary functions
+[ ] - Make bounce back for player
 [ ] - Put multiplier in
 [ ] - Add multiplier display
 [ ] - Add speedup/slowdown to gameplay logic
