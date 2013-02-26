@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MainGame : MonoBehaviour {
 	
+	public GameObject mainCamera; // Game camera
 	public GameObject playerShip; // Player's Ship Prefab
 	public GameObject enemy; // Enemy Prefab
 	public GameObject powerUp; // Power Up Prefab

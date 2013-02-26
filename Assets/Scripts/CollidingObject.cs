@@ -18,4 +18,6 @@ public class CollidingObject : MonoBehaviour {
 	public virtual void powerUpCollision() { }
 	
 	public virtual void bulletCollision() { }
+	
+	public virtual void boundaryExit() { }
 }
